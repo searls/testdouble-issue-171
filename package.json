@@ -2,11 +2,14 @@
   "name": "testdouble-issue",
   "version": "0.0.1",
   "scripts": {
-    "test": "lab test/",
+    "test:lab": "lab test/",
+    "test:mocha": "mocha test/",
+    "test": "npm run test:mocha && npm run test:lab",
     "style": "standard"
   },
   "devDependencies": {
     "lab": "^11.2.1",
+    "mocha": "^3.2.0",
     "standard": "^8.6.0",
     "testdouble": "^1.10.1"
   }
